@@ -187,27 +187,31 @@ const AddList = styled.div`
       width: 2px;
     }
   }
+
+  &:hover {
+      background: rgb(198, 198, 198);
+    }
 `;
 
 const GroupWatch = styled.div`
-  height: 44px;
+  margin-right: 16px;
   width: 44px;
-  border-radius: 50%;
+  height: 44px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
-  background: white;
 
-  div {
-    height: 40px;
-    width: 40px;
-    background: rgb(0, 0, 0);
-    border-radius: 50%;
+  span {
+      font-size: 30px;
+      color: white;
+  }
 
-    img {
-      width: 100%;
-    }
+  &:hover {
+      background: rgb(198, 198, 198);
   }
 `;
 

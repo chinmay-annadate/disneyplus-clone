@@ -59,7 +59,9 @@ const Header = (props) => {
   return (
     <Nav>
       <Logo>
-        <img src="/images/logo.svg" alt="Disney+" />
+        <a href="/home">
+          <img src="/images/logo.svg" alt="Disney+" />
+        </a>
       </Logo>
 
       {!userName ? (
@@ -126,6 +128,7 @@ const Logo = styled.a`
   max-height: 70px;
   font-size: 0;
   display: inline-block;
+  cursor: pointer;
 
   img {
     display: block;
@@ -144,6 +147,7 @@ const NavMenu = styled.div`
   position: relative;
   margin-right: auto;
   margin-left: 25px;
+  cursor: pointer;
 
   a {
     display: flex;
